@@ -1,0 +1,117 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+body{
+    background: #ffff;
+}
+/*ContenedorPadre*/
+.Conte-nav{
+    margin-top: -50px;
+    background: black;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+.nav-enlace{
+    display: inline-block;
+    color: #ffff;
+    text-decoration: none;
+    padding: 20px 30px;
+}
+.nav-enlace:hover{
+    background:#152744;
+}
+/*EtiquetaImagen*/
+.Img{
+    width: 400px;
+    display: block;
+    margin: auto;
+    margin-top: -40px;
+}
+.Container-content{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+
+}
+article{
+    width: 100%;
+    padding: 20px;
+    padding-bottom: 40px;
+    box-shadow: -10px 0 20px -30px black;
+    border-radius: 6px;
+    position: relative;
+    overflow: hidden;
+}
+
+article::before{
+    content: "";
+    width: 100%;
+    height: 6px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #61D2B4;
+}
+article h1{
+    margin-top: 20px;
+    font-weight: 500;
+    font-size: 40px;
+    font-family: 'Roboto Slab', serif;
+}
+article h2{
+    margin-top: 20px;
+    font-size: 30px;
+    color: #3c3c3c;
+    font-family: 'Shippori Antique B1', sans-serif;
+}
+
+article p{
+    margin-top: 20px;
+    font-size: 18px;
+    color: #3c3c3c;
+}
+article img{
+    width: 60%;
+    display: block;
+    margin: 10px 150px;
+}
+/*Aside de los Articulos*/
+.Container-aside aside{
+    width: 320px;
+    box-shadow: 0 0 20px -20px black;
+    border-right: 6px;
+    overflow: hidden;
+    margin-left: 40px;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+
+
+}
+.Container-aside button:hover{
+    transform: scale(1.05);
+}
+.Container-aside aside img{
+    width: 100%;
+}
+.Container-aside aside h2,
+.Container-aside aside p{
+    margin-top: 20px;
+    padding: 0px 20px;
+}
+.Container-aside aside button{
+    margin-top: 20px;
+    margin-left: 20px;
+    background: #71DFE7;
+    font-size: 20px;
+    padding: 5px 5px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-family: 'Teko', sans-serif;
+
+}

@@ -1,0 +1,234 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+body{
+    background: #ffff;
+}
+/*ContenedorPadre*/
+.Conte-nav{
+    margin-top: -50px;
+    background: black;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+.nav-enlace{
+    display: inline-block;
+    color: #ffff;
+    text-decoration: none;
+    padding: 20px 30px;
+}
+.nav-enlace:hover{
+    color: brown;
+}
+/*EtiquetaImagen*/
+.Img{
+    width: 400px;
+    display: block;
+    margin: auto;
+    margin-top: -40px;
+}
+.Container-FP{
+    width: 90%;
+    margin: auto;
+/*Permite que u caja sea flexibe */ 
+    display: flex;
+    justify-content: center;
+
+}
+/*Contenido*/
+article{
+    width: 100%;
+    padding: 20px;
+    padding-bottom: 40px;
+    box-shadow: -10px 0 20px -30px black;
+    border-radius: 6px;
+    position: relative;
+    overflow: hidden;
+}
+article::before{
+    content: "";
+    width: 100%;
+    height: 6px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #61D2B4;
+}
+article h1{
+    margin-top: 20px;
+    font-weight: 500;
+    font-size: 40px;
+    font-family: 'Roboto Slab', serif;
+}
+article h2{
+    margin-top: 20px;
+    font-size: 30px;
+    color: #3c3c3c;
+    font-family: 'Shippori Antique B1', sans-serif;
+}
+article h3{
+    margin-top: 20px ;
+    margin-bottom: 20px;
+    font-size: 20px;
+    color: #3c3c3c;
+    font-family: 'Shippori Antique B1', sans-serif;
+}
+article p{
+    margin-top: 20px;
+    font-size: 18px;
+    color: #3c3c3c;
+    text-align: justify;
+}
+
+.Container-FP li{
+    font-size: 18px;
+    color: #3c3c3c;
+    text-align: justify;
+    margin-left: 40px;
+
+}
+.Content-g p{
+    margin-top: 20px;
+    font-size: 18px;
+    color: #3c3c3c;
+    text-align: justify;
+
+}
+.Content-g li{
+    font-size: 18px;
+    color: #3c3c3c;
+    text-align: justify;
+    margin-left: 40px;
+
+}
+.Content-g img{
+        float: right;
+        width: 300px;
+        padding: 10px;
+      
+}
+/*Aside de los Articulos*/
+.Container-asideP aside{
+    width: 320px;
+    box-shadow: 0 0 20px -20px black;
+    border-right: 6px;
+    overflow: hidden;
+    margin-left: 40px;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+}
+
+.Container-asideP aside img{
+    width: 100%;
+}
+.Container-asideP aside h2,
+.Container-asideP aside p{
+    margin-top: 20px;
+    padding: 0px 20px;
+}
+.Container-asideP aside button{
+    margin-top: 20px;
+    margin-left: 20px;
+    background: #71DFE7;
+    font-size: 20px;
+    padding: 5px 5px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-family: 'Teko', sans-serif;
+
+}
+.Container-asideP button:hover{
+    transform: scale(1.05)
+}
+/*Footer de pagina*/
+.PiedePagina{
+    width: 100%;
+    background: #0a141d;
+}
+/*Estilos al grupo h1*/
+.PiedePagina .Grupo1{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 50px;
+    padding: 45px 0px;
+}
+.PiedePagina .Grupo1 .box figure{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.PiedePagina .Grupo1 .box figure img{
+    width: 350px;
+}
+.PiedePagina .Grupo1 .box h2{
+    color: #fff;
+    margin-bottom: 20px;
+    font-size: 20px;
+    font-family: 'Shippori Antique B1', sans-serif;
+}
+.PiedePagina .Grupo1 .box p{
+    color: #efefef;
+    margin-bottom: 10px;
+    font-family: 'Shippori Antique B1', sans-serif;
+}
+.PiedePagina .Grupo1 .Redes-Sociales a{
+    display: inline-block;
+    text-decoration: none;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    color: #fff;
+    margin-right: 10px;
+    background-color: #0d2033;
+    border-radius: 100%;
+    text-align: center;
+    transition: all 300ms ease;
+}
+.box .Redes-Sociales .fa-facebook:hover {
+    background:#41579A;
+    color: #fff;
+
+}
+.box .Redes-Sociales .fa-instagram:hover {
+    background: linear-gradient(to top right, #FCDE30, #E9712A, #D2313B, #AE4198, #7540A1, #5443ab);
+    color: #fff;
+}
+.box .Redes-Sociales .fa-youtube:hover {
+    background:#c4302b ;
+    color: #fff;
+}
+.box .Redes-Sociales .fa-twitter:hover {
+    background: #00acee;
+    color: #fff;
+}
+.PiedePagina .Grupo2{
+    background-color: #0a1a2a;
+    padding: 15px 10px;
+    text-align: center;
+    color: #fff;
+}
+.PiedePagina .Grupo2 small{
+    font-size: 18px;
+}
+@media screen and (max-width: 800px){
+    .PiedePagina .Grupo1{
+        width: 90%;
+        max-width: 1200px;
+        margin: auto;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 30px;
+        padding: 36px 0px;
+    }
+
+}
